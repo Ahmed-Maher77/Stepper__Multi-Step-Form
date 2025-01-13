@@ -28,7 +28,7 @@ const Payment = () => {
 
 	useEffect(() => {
 		dispatch(set_Payment({formData: formData, isValid: validInputs.creditNumber && validInputs.creditExpiry}))
-	}, [formData, validInputs])
+	}, [formData, validInputs, dispatch])
 
 	const inputsData = [
 		{
