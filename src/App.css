@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--c-white: #fff;
+	--c-gray: #eee;
+	--c-dark-gray: #ddd;
+	--c-gray: #949494;
+	--c-gray-d: #747474;
+	--c-purple: #007bd6;
+	--c-white-forever: #fff;
+	--c-dark: #000;
+	--c-green: rgb(0, 169, 0);
+	--c-dark-green: rgb(0 97 0);
+	--trans-3: 0.3s;
+}
+body {
+	background-color: var(--c-dark-gray);
+}
+
+
+.App {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	text-align: center;
+	flex-direction: column;
+	padding-block: 30px;
+}

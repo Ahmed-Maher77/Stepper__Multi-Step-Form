@@ -1,0 +1,38 @@
+.Navigation-Btns {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+	button {
+		width: 110px;
+		min-width: fit-content;
+		font-size: 1rem;
+		padding: 12px 0px;
+		border-radius: 5px;
+		border: 2px solid var(--c-gray-d);
+		cursor: pointer;
+		transition: var(--trans-3);
+		&.prev-btn {
+			color: var(--c-gray-d);
+			background-color: transparent;
+			&:hover {
+				background-color: var(--c-gray-d);
+				color: var(--c-white);
+			}
+		}
+		&.next-btn {
+			border-color: var(--c-green);
+			background-color: var(--c-green);
+			color: var(--c-white);
+			&:hover {
+				background-color: var(--c-dark-green);
+				border-color: var(--c-dark-green);
+			}
+		}
+		&[disabled] {
+			opacity: 0.7;
+			cursor: not-allowed;
+			background-color: var(--c-gray-d);
+			color: var(--c-white);
+		}
+	}
+}

@@ -1,0 +1,35 @@
+footer {
+    padding: 0 30px;
+    line-height: 1.6;
+    color: var(--c-gray-d);
+    font-size: 1.1rem;
+    margin-top: 50px;
+    a {
+        text-decoration: none;
+        color: var(--c-purple);
+        font-weight: 600;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "Who is the developer?";
+            left: 50%;
+            transform: translateX(-50%);
+            top: -50px;
+            background-color: black;
+            color: #fff;
+            padding: 8px 13px;
+            border-radius: 8px;
+            min-width: 180px;
+            width: fit-content;
+            font-weight: normal;
+            opacity: 0;
+            transition: var(--trans-3);
+        }
+        &:hover {
+            color: var(--c-green);
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}

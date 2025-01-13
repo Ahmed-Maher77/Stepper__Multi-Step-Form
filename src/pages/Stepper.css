@@ -1,0 +1,32 @@
+.Stepper-Page {
+	background-color: var(--c-white);
+	color: var(--c-dark);
+	width: 95%;
+	max-width: 1000px;
+	margin-inline: auto;
+	border-radius: 8px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.registered {
+	p {
+		font-size: 1.2rem;
+	}
+	button {
+		padding: 15px 30px;
+		margin-top: 30px;
+		border: 1px solid var(--c-purple);
+		border-radius: 31px;
+		font-size: 1rem;
+		color: var(--c-purple);
+		background: transparent;
+		cursor: pointer;
+		transition: var(--trans-3);
+		&:hover {
+            background-color: var(--c-purple);
+            color: var(--c-white);
+        }
+	}
+}
