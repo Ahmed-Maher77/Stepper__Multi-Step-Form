@@ -2,7 +2,7 @@ footer {
     padding: 0 30px;
     line-height: 1.6;
     color: var(--c-gray-d);
-    font-size: 1.1rem;
+    font-size: 0.92rem;
     margin-top: 40px;
     a {
         text-decoration: none;
@@ -31,5 +31,11 @@ footer {
                 opacity: 1;
             }
         }
+    }
+    @media (min-width: 576px){
+        font-size: 1rem;
+    }
+    @media (min-width: 768px){
+        font-size: 1.1rem;
     }
 }

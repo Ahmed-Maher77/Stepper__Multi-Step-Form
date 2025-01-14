@@ -28,5 +28,10 @@ body {
 	min-height: 100vh;
 	text-align: center;
 	flex-direction: column;
-	padding-block: 30px;
+	padding-block: 22px 10px;
+	h1 {
+		font-size: 2rem;
+        margin-bottom: 30px;
+		text-align: center;
+	}
 }

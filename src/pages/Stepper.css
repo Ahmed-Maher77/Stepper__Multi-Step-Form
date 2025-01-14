@@ -6,9 +6,11 @@
 	margin-inline: auto;
 	border-radius: 8px;
 	padding: 25px;
+	/* padd */
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
+	
 }
 .registered {
 	p {
