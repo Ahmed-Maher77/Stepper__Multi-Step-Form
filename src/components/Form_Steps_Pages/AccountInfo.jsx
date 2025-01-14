@@ -12,8 +12,8 @@ const AccountInfo = () => {
 	// Initialize state for form data, validation, and errors
 	const [formData, setFormData] = useState({ username: accountInfo.formData.username || "", email: accountInfo.formData.email || "" });
 	const [validInputs, setValidInputs] = useState({
-		username: false,
-		email: false,
+		username: validateInput("username", accountInfo.formData.username) || false,
+		email: validateInput("email", accountInfo.formData.email) || false,
 	});
 	const [errors, setErrors] = useState({ username: false, email: false });
 

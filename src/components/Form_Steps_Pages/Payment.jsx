@@ -10,8 +10,8 @@ const Payment = () => {
 
 	const [formData, setFormData] = useState({ creditNumber: paymentInfo.formData.creditNumber || "", creditExpiry: paymentInfo.formData.creditExpiry || "" });
 	const [validInputs, setValidInputs] = useState({
-		creditNumber: false,
-		creditExpiry: false,
+		creditNumber: validateInput("creditNumber", paymentInfo.formData.creditNumber) || false,
+		creditExpiry: validateInput("creditExpiry", paymentInfo.formData.creditExpiry) || false,
 	});
 	// const [formSubmitLoading, setFormSubmitLoading] = useState(false);
 	const [errors, setErrors] = useState({ creditNumber: false, creditExpiry: false });

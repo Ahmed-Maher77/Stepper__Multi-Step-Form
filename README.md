@@ -7,7 +7,7 @@ This project features a dynamic multi-step form that allows users to input infor
 - <strong>React.js:</strong> For building a dynamic and interactive user interface.
 - <strong>Redux && React Redux:</strong> For managing the state of the multi-step form efficiently.
 - <strong>SweetAlert2:</strong> For elegant alerts and confirmation dialogs.
-- <strong>GitHub Pages:</strong> For hosting the web application
+- <strong>Netlify:</strong> For hosting the web application
 - <strong>HTML/HTML5</strong> 
 - <strong>CSS/CSS3</strong> 
 - <strong>Git</strong> 

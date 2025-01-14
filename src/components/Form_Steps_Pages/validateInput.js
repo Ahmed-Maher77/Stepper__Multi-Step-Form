@@ -14,14 +14,14 @@ const validateInput = (type, value) => {
             }
             break;
         case "address":
-            // Validate address: 5-200 characters
-            if (/^[A-Za-z0-9À-ÖØ-öø-ÿ\s.,'-]{5,200}$/.test(value)) {
+            // Validate address: 5-200 characters, allow letters, numbers, and various symbols including Unicode for other languages
+            if (/^[\p{L}\p{N}\s.,'-]{5,200}$/u.test(value)) {
                 isValid = true;
             }
             break;
         case "city":
-            // Validate city name: 2-100 characters
-            if (/^[A-Za-zÀ-ÖØ-öø-ÿ\s_,-]{2,100}$/.test(value)) {
+            // Validate city name: 2-100 characters, allow letters, spaces, and some symbols including Unicode for other languages
+            if (/^[\p{L}\s_,-]{2,100}$/u.test(value)) {
                 isValid = true;
             }
             break;

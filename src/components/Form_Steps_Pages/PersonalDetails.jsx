@@ -12,8 +12,8 @@ const PersonalDetails = () => {
 	// Component state for form data, validation, and errors
 	const [formData, setFormData] = useState({ address: personalDetails.formData.address || "", city: personalDetails.formData.city || "" });
 	const [validInputs, setValidInputs] = useState({
-		address: false,
-		city: false,
+		address: validateInput("address", personalDetails.formData.address) || false,
+		city: validateInput("city", personalDetails.formData.city) || false,
 	});
 	const [errors, setErrors] = useState({ address: false, city: false });
 
